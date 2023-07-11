@@ -13,6 +13,9 @@ function creoQuadrato(contenutoQuadrato, quadratiDaCreare) {
 
     const quadratiPerRiga = Math.sqrt(quadratiDaCreare);
     quadrato.style.flexBasis = `calc(100% / ${quadratiPerRiga})`
+    quadrato.addEventListener("click", function () {
+        quadrato.classList.add("bg-info");
+    })
 
     return quadrato;
 }
